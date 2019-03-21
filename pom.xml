@@ -8,5 +8,19 @@
     <artifactId>testproject</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <junitVersion>4.12</junitVersion>
+    </properties>
+
+    <dependencies>
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junitVersion}</version>
+        <scope>test</scope>
+    </dependency>
+    </dependencies>
+
 
 </project>
