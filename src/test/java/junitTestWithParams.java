@@ -1,4 +1,5 @@
 import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -43,7 +44,7 @@ public class junitTestWithParams {
   @Test
   public void userTest(){
     Response resp =
-            RestAssured.given().
+            given().
                     header("X-Authorization", "Vertis swagger").
                     header("X-uid", this.uId).
                     log().all().
